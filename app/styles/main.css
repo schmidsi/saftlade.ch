@@ -16,6 +16,14 @@ body {
   );
 }
 
+/* tags */
+h1 {
+  font-family: TrueNorth-Regular, sans-serif;
+  font-weight: normal;
+  font-size: 4rem;
+  line-height: 1.03
+}
+
 /* basics */
 .bold {
   font-weight: bold;
@@ -46,6 +54,13 @@ p, .text {
 
 .push-top-2 {
   margin-top: 2em;
+}
+
+/* design */
+.claim {
+  margin-top: 5rem;
+  margin-left: -0.15em;
+  margin-bottom: 0.2rem;
 }
 
 /* dev */

@@ -1,0 +1,62 @@
+html, body {
+  min-height: 100%;
+  padding: 0;
+}
+
+body {
+  color: #1C1C1C;
+  font-family: courier, monospace;
+
+  background: repeating-linear-gradient(
+    315deg,
+    #ffec6b,
+    #ffec6b 60px,
+    #ffffff 60px,
+    #ffffff 120px
+  );
+}
+
+/* basics */
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.icon-medium {
+  height: 3.5em;
+  width: 3.5em;
+  vertical-align: middle;
+  margin-bottom: 0.7em;
+}
+
+p, .text {
+  font-size: 0.9375em;
+}
+
+/* layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 75px;
+  padding-right: 40px;
+}
+
+.push-top-2 {
+  margin-top: 2em;
+}
+
+/* dev */
+#devhelper {
+  /*opacity: 0.5;*/
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1200px;
+  background-image: url(/images/mockups/saftlade_0000_page.jpg);
+  background-size: cover;
+}

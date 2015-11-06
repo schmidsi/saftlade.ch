@@ -1,3 +1,7 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 html, body {
   min-height: 100%;
   padding: 0;
@@ -24,6 +28,10 @@ h1 {
   line-height: 1.03
 }
 
+img {
+  max-width: 100%;
+}
+
 /* basics */
 .bold {
   font-weight: bold;
@@ -33,15 +41,10 @@ h1 {
   text-align: center;
 }
 
-.icon-medium {
-  height: 3.5em;
-  width: 3.5em;
-  vertical-align: middle;
-  margin-bottom: 0.7em;
-}
-
 p, .text {
+  font-weight: normal;
   font-size: 0.9375em;
+  line-height: 1.5;
 }
 
 /* layout */
@@ -56,11 +59,78 @@ p, .text {
   margin-top: 2em;
 }
 
+.push-top-4 {
+  margin-top: 4em;
+}
+
+.third, .cols-4 {
+  display: inline-block;
+  width: 21.8125em;
+  margin-right: 1.1875em;
+}
+
 /* design */
 .claim {
   margin-top: 5rem;
   margin-left: -0.15em;
   margin-bottom: 0.2rem;
+}
+
+.icon-medium {
+  height: 3.5em;
+  width: 3.5em;
+  vertical-align: middle;
+  margin-bottom: 0.7em;
+}
+
+.icon-large {
+  height: 6em;
+  width: 6em;
+}
+
+.icon-xlarge {
+  height: 7em;
+  width: 7em;
+}
+
+.icon-floating {
+  position: absolute;
+}
+
+#strawberry-icon {
+  top: 19.5rem;
+  left: -2.5rem;
+}
+
+#brine-icon {
+  top: 24rem;
+  right: 5%;
+}
+
+#lime-icon {
+  top: 35rem;
+  right: 16%;
+}
+
+#juicebike-button {
+  top: 16rem;
+  right: 22%;
+}
+
+.icon-button {
+  position: absolute;
+  height: 9em;
+  width: 9em;
+  background-color: #1C1C1C;
+  border-radius: 9em;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button img {
+  width: 100%;
 }
 
 /* dev */

@@ -39,6 +39,18 @@ img {
   max-width: 100%;
 }
 
+a.no-deco {
+  text-decoration: none;
+}
+
+a.hover-deco {
+ text-decoration: none;
+}
+
+a.hover-deco:hover {
+  text-decoration: underline;
+}
+
 /* basics */
 .bold {
   font-weight: bold;
@@ -56,6 +68,14 @@ p, .text {
 
 .absolute {
   position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex-1 {
@@ -96,8 +116,8 @@ p, .text {
 
 .third, .cols-4 {
   display: inline-block;
-  width: 21.8125em;
-  margin-right: 1.1875em;
+  width: 21.8125rem;
+  margin-right: 1.1875rem;
 }
 
 .footer {
@@ -108,9 +128,12 @@ p, .text {
   color: white;
 }
 
+.right {
+  float: right;
+}
+
 .footer a {
   color: white;
-  text-decoration: none;
 }
 
 /* design */
@@ -118,6 +141,13 @@ p, .text {
   margin-top: 5rem;
   margin-left: -0.15em;
   margin-bottom: 0.2rem;
+}
+
+.icon-small {
+  height: 2.5em;
+  width: 2.5em;
+  vertical-align: middle;
+  margin-right: 1em;
 }
 
 .icon-medium {
@@ -135,10 +165,6 @@ p, .text {
 .icon-xlarge {
   height: 7em;
   width: 7em;
-}
-
-.icon-floating {
-  position: absolute;
 }
 
 #strawberry-icon {
@@ -159,6 +185,10 @@ p, .text {
 #juicebike-button {
   top: 16rem;
   right: 22%;
+}
+
+#carrot-icon {
+  top: 0;
 }
 
 .icon-button {

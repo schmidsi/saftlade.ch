@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'TrueNorth-Regular';
+  src: url('../fonts/true-north.eot');
+  src: url('../fonts/true-north.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/true-north.woff2') format('woff2'),
+       url('../fonts/true-north.woff') format('woff'),
+       url('../fonts/true-north.ttf') format('truetype'),
+       url('../fonts/true-north.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
 }

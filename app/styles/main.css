@@ -1,3 +1,17 @@
+/*
+VARS:
+yellow: #ffec6b;
+black: #1C1C1C;
+
+breakpoints: (default: large)
+large: >1050px;
+medium: <700px;
+small: <400px;
+
+transition-duration: 0.3s;
+
+*/
+
 @font-face {
   font-family: 'TrueNorth-Regular';
   src: url('../fonts/true-north.eot');
@@ -47,6 +61,18 @@ h1 {
   line-height: 1.03
 }
 
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -94,6 +120,24 @@ p, .text {
   flex: 1;
 }
 
+.transition {
+  transition: all 0.3s;
+}
+
+.lte-medium-show {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .lte-medium-hide {
+    display: none;
+  }
+
+  .lte-medium-show {
+    display: block;
+  }
+}
+
 /* layout */
 .content {
   min-height: 100vh;
@@ -118,6 +162,13 @@ p, .text {
   padding-right: 40px;
 }
 
+@media screen and (max-width: 700px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 .push-top-2 {
   margin-top: 2em;
 }
@@ -129,6 +180,7 @@ p, .text {
 .third, .cols-4 {
   display: inline-block;
   width: 21.8125rem;
+  max-width: 100%;
   margin-right: 1.1875rem;
 }
 
@@ -142,6 +194,10 @@ p, .text {
 
 .right {
   float: right;
+}
+
+.left {
+  float: left;
 }
 
 .footer a {
@@ -174,9 +230,23 @@ p, .text {
   width: 6em;
 }
 
+@media screen and (max-width: 700px) {
+  .icon-large {
+    height: 5em;
+    width: 5em;
+  }
+}
+
 .icon-xlarge {
   height: 7em;
   width: 7em;
+}
+
+@media screen and (max-width: 1050px) {
+  .icon-xlarge {
+      height: 6em;
+      width: 6em;
+    }
 }
 
 #strawberry-icon {
@@ -184,9 +254,22 @@ p, .text {
   left: -2.5rem;
 }
 
+@media screen and (max-width: 700px) {
+  #strawberry-icon {
+    left: -3.75rem;
+  }
+}
+
 #brine-icon {
   top: 24rem;
   right: 5%;
+}
+
+@media screen and (max-width: 1050px) {
+  #brine-icon {
+    top: 4rem;
+    right: 9%;
+  }
 }
 
 #lime-icon {
@@ -194,13 +277,35 @@ p, .text {
   right: 16%;
 }
 
+@media screen and (max-width: 1050px) {
+  #lime-icon {
+    top: 35rem;
+    right: 5%;
+  }
+}
+
 #juicebike-button {
   top: 16rem;
   right: 22%;
 }
 
+@media screen and (max-width: 1050px) {
+  #juicebike-button {
+    top: 19rem;
+    right: 22%;
+  }
+}
+
 #carrot-icon {
   top: 0;
+  left: 28rem;
+}
+
+@media screen and (max-width: 700px) {
+  #carrot-icon {
+    top: 1rem;
+    left: 12rem;
+  }
 }
 
 .icon-button {
@@ -217,6 +322,13 @@ p, .text {
 
 .icon-button img {
   width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .icon-button {
+    height: 7em;
+    width: 7em;
+  }
 }
 
 /* dev */

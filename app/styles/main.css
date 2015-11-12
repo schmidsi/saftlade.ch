@@ -69,7 +69,7 @@ h1 {
 
 @media screen and (max-width: 400px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.78rem;
   }
 }
 
@@ -126,6 +126,10 @@ p, .text {
 
 .lte-medium-show {
   display: none;
+}
+
+.no-margin {
+  margin: 0 !important;
 }
 
 @media screen and (max-width: 700px) {
@@ -218,6 +222,14 @@ p, .text {
   margin-right: 1em;
 }
 
+
+@media screen and (max-width: 400px) {
+  .icon-small {
+    height: 2em;
+    width: 2em;
+  }
+}
+
 .icon-medium {
   height: 3.5em;
   width: 3.5em;
@@ -249,6 +261,13 @@ p, .text {
     }
 }
 
+@media screen and (max-width: 400px) {
+  .icon-xlarge {
+    height: 5em;
+    width: 5em;
+  }
+}
+
 #strawberry-icon {
   top: 19.5rem;
   left: -2.5rem;
@@ -272,6 +291,13 @@ p, .text {
   }
 }
 
+@media screen and (max-width: 400px) {
+  #brine-icon {
+    top: 5rem;
+    right: 9%;
+  }
+}
+
 #lime-icon {
   top: 35rem;
   right: 16%;
@@ -280,6 +306,13 @@ p, .text {
 @media screen and (max-width: 1050px) {
   #lime-icon {
     top: 35rem;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #lime-icon {
+    top: 50rem;
     right: 5%;
   }
 }
@@ -296,15 +329,22 @@ p, .text {
   }
 }
 
+@media screen and (max-width: 400px) {
+ #juicebike-button {
+    top: 16rem;
+    right: 1%;
+  }
+}
+
 #carrot-icon {
-  top: 0;
+  top: -1.5rem;
   left: 28rem;
 }
 
 @media screen and (max-width: 700px) {
   #carrot-icon {
-    top: 1rem;
-    left: 12rem;
+    top: 3rem;
+    left: 14rem;
   }
 }
 

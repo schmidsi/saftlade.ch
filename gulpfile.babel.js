@@ -153,6 +153,4 @@ gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => { // 'lint',
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}))
 })
 
-gulp.task('default', ['clean'], () => {
-  gulp.start('build')
-})
+gulp.task('default', ['serve'])

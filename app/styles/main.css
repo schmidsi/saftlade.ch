@@ -159,6 +159,7 @@ p, .text {
   overflow: hidden;
 }
 
+
 /* layout
 ******************************************************************************/
 .content {
@@ -559,6 +560,72 @@ p, .text {
   }
 }
 
+#saftkurier-photos-holder {
+  position: absolute;
+  width: 50%;
+  top: 17rem;
+  right: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  #saftkurier-photos-holder {
+    position: static;
+    height: 45rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #saftkurier-photos-holder {
+    position: static;
+    height: 20rem;
+  }
+}
+
+.saftkurier-photo {
+  position: absolute;
+}
+
+.saftkurier-photo::hover {
+  z-index: 5
+}
+
+#saftkurier-photo-1 {
+  margin-top: 10%;
+}
+
+#saftkurier-photo-2 {
+  width: 60%;
+  left: 20%;
+}
+
+#juicebike-button-2 {
+  top: 20rem;
+  left: -2rem;
+}
+
+@media screen and (max-width: 1050px) {
+  #juicebike-button-2 {
+    top: 20rem;
+    left: auto;
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #juicebike-button-2 {
+    top: 42rem;
+    left: auto;
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #juicebike-button-2 {
+    top: 25rem;
+    left: auto;
+    right: 2rem;
+  }
+}
 
 /* dev
 ******************************************************************************/

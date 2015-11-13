@@ -2,6 +2,7 @@
 VARS:
 yellow: #ffec6b;
 black: #1C1C1C;
+grey: #f9f8ee;
 
 breakpoints: (default: large)
 large: >1050px;
@@ -35,27 +36,14 @@ html, body {
 }
 
 body {
+  background-color: #f9f8ee;
   color: #1C1C1C;
   font-family: courier, monospace;
-
-  /*
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  */
-
-  background: repeating-linear-gradient(
-    315deg,
-    #ffec6b,
-    #ffec6b 60px,
-    #ffffff 60px,
-    #ffffff 120px
-  );
 }
 
 /* tags */
 h1 {
-  font-family: TrueNorth-Regular, sans-serif;
+  font-family: "TrueNorth-Regular", sans-serif;
   font-weight: normal;
   font-size: 4rem;
   line-height: 1.03
@@ -121,7 +109,7 @@ p, .text {
 }
 
 .transition {
-  transition: all 0.3s;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .lte-medium-show {
@@ -155,8 +143,9 @@ p, .text {
   width: 100%;
 }
 
-.header {
-  padding-top: 2rem;
+.panel {
+  min-height: 100vh;
+  padding: 2rem 0;
 }
 
 .container {
@@ -209,6 +198,16 @@ p, .text {
 }
 
 /* design */
+.stripe-bg {
+  background: repeating-linear-gradient(
+    315deg,
+    #ffec6b,
+    #ffec6b 60px,
+    #ffffff 60px,
+    #ffffff 120px
+  );
+}
+
 .claim {
   margin-top: 5rem;
   margin-left: -0.15em;
@@ -305,7 +304,7 @@ p, .text {
 
 @media screen and (max-width: 1050px) {
   #lime-icon {
-    top: 35rem;
+    top: 37rem;
     right: 5%;
   }
 }
@@ -324,14 +323,14 @@ p, .text {
 
 @media screen and (max-width: 1050px) {
   #juicebike-button {
-    top: 19rem;
+    top: 17rem;
     right: 22%;
   }
 }
 
 @media screen and (max-width: 400px) {
  #juicebike-button {
-    top: 17rem;
+    top: 16rem;
     right: 1%;
   }
 }
@@ -358,6 +357,10 @@ p, .text {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.icon-button:hover {
+  transform: scale(1.5) rotate(-15deg);
 }
 
 .icon-button img {

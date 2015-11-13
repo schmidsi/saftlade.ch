@@ -18,3 +18,28 @@ window.addEventListener('keypress', function (e) {
     }
   }
 })
+
+$(function () {
+  var url = 'https://api.instagram.com/v1/users/2001288107/media/recent/'
+
+  $.ajax({
+    url: url,
+    jsonp: 'callback',
+    dataType: 'jsonp',
+    data: {
+      count: 1,
+      client_id: 'f01913ec540e40e886efbe403304ffe5'
+    }
+  }).then(function (response) {
+    var lastPost = response.data[0]
+    var created = new Date(parseInt(lastPost.created_time, 10) * 1000)
+    var today = new Date((new Date()).setHours(0, 0, 0, 0))
+
+    $('[data-hook=instagram-caption]').text(lastPost.caption.text)
+    $('[data-hook=instagram-image-link]').attr('href', lastPost.link)
+    $('[data-hook=instagram-image]').attr('src', lastPost.images.standard_resolution.url)
+    $('[data-hook=menu-title]').text($('[data-hook=menu-title]').data('alt'))
+
+    console.log(lastPost, created, today, created > today)
+  })
+})

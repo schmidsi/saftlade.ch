@@ -27,18 +27,47 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="floating-icons">
-      <img id="strawberry-icon" src="/images/strawberry.svg" class="icon icon-large absolute transition" />
-      <img id="brine-icon" src="/images/brine.svg" class="icon icon-xlarge absolute transition" />
-      <img id="lime-icon" src="/images/lime.svg" class="icon icon-xlarge absolute transition" />
-
-      <a id="juicebike-button" href="mailto:kontakt@saftlade.ch?subject=Saftkurier" class="icon-button transition">
-        <img src="/images/juicebike.svg" alt="Saftkurier" />
-      </a>
-    </div>
-
     <div class="content">
-      <div class="panel stripe-bg">
+      <div class="panel stripe-bg relative no-overflow">
+        <header class="container">
+          <div class="center logo bold text lte-small-hide">
+            <span>saftlade</span>
+            <img src="/images/saftpresse.svg" class="icon icon-medium" alt="saftladen.ch saftpresse logo" />
+            <span>seit 1990</span>
+          </div>
+
+          <h1 class="claim transition">Bio-Qualität und hausge&shy;macht</h1>
+          <div class="text">Mo–Sa: 07.00–19.00 Uhr<div>
+        </header>
+
+        <div class="container push-top-4">
+          <div class="third margin-bottom-3">
+            <h3 class="text">Essen</h3>
+            <p>Bei uns gibt es jeden Tag ein für euch kreiertes Mittagsmenü, zwei vegane Suppen,
+  Guacamole, Hummus und viele andere leckere Sandwiches. Ausserdem Joghurts mit Chiasamen und Goji-Beeren und unser original Milchreis mit Kompott. Hunger willkommen.
+            </p>
+          </div>
+          <div class="third margin-bottom-3">
+            <h3 class="text">Frische Säfte und Smoothies</h3>
+            <p>Mehrmals täglich frisch, ohne Zusatzstoffe, ohne Zucker, nicht mit Wasser gestreckt und natürlich mit viel liebe zubereitet. 100% Bio versteht sich bei uns von selbst. Je nach Jahreszeit findet ihr andere Produkte in unserem Angebot.
+            </p>
+          </div>
+        </div>
+
+        <div class="small-spacer"></div>
+
+        <div class="floating-icons">
+          <img id="strawberry-icon" src="/images/strawberry.svg" class="icon icon-large absolute transition" />
+          <img id="brine-icon" src="/images/brine.svg" class="icon icon-xlarge absolute transition" />
+          <img id="lime-icon" src="/images/lime.svg" class="icon icon-xlarge absolute transition" />
+
+          <a id="juicebike-button" href="mailto:kontakt@saftlade.ch?subject=Saftkurier" class="icon-button transition">
+            <img src="/images/juicebike.svg" alt="Saftkurier" />
+          </a>
+        </div>
+      </div>
+
+      <div class="panel order-small">
         <header class="container">
           <div class="center logo bold text">
             <span>saftlade</span>
@@ -46,32 +75,26 @@
             <span>seit 1990</span>
           </div>
 
-          <h1 class="claim transition">Bio-Qualität und <br> hausgemacht</h1>
-          <div class="text">Mo–Sa: 07.00–19.00 Uhr<div>
+          <h1 class="claim transition relative z10 lte-small-hide">Bio-Qualität und <br> hausgemacht</h1>
+          <div class="text lte-small-hide">Mo–Sa: 07.00–19.00 Uhr<div>
         </header>
 
-        <div class="container push-top-4">
-          <div class="third">
-            <h3 class="text">Essen</h3>
-            <p>Bei uns gibt es jeden Tag ein für euch kreiertes Mittagsmenü, zwei vegane Suppen,
-  Guacamole, Hummus und viele andere leckere Sandwiches. Ausserdem Joghurts mit Chiasamen und Goji-Beeren und unser original Milchreis mit Kompott. Hunger willkommen.
-            </p>
-          </div>
-          <div class="third">
-            <h3 class="text">Frische Säfte und Smoothies</h3>
-            <p>Mehrmals täglich frisch, ohne Zusatzstoffe, ohne Zucker, nicht mit Wasser gestreckt und natürlich mit viel liebe zubereitet. 100% Bio versteht sich bei uns von selbst. Je nach Jahreszeit findet ihr andere Produkte in unserem Angebot.
-            </p>
+        <div class="container relative">
+          <h2 data-hook="menu-title" data-alt="Menü heute" class="push-top-4">Bald steht hier das Tagesmenü</h2>
+          <p class="third relative z10" data-hook="instagram-caption">
+            Wir haben das heutige Menü noch nicht veröffentlicht. Komm später noch einmal und folge uns auf <a href="https://www.facebook.com/saftlade/" target="_blank">Facebook</a> oder <a href="https://www.instagram.com/saftlade/" target="_blank">Instagram</a>.
+          </p>
+          <div id="instagram-image">
+            <a data-hook="instagram-image-link"  class="transition" target="_blank">
+              <img data-hook="instagram-image" src="https://scontent.cdninstagram.com/hphotos-xta1/t51.2885-15/s640x640/sh0.08/e35/10817674_733953860043963_1374058626_n.jpg">
+            </a>
+            <a href="https://www.instagram.com/saftlade/" class="icon-button transition" target="_blank" id="instagram-button">
+              <span class="rotate-15">Menüs auf Instagram</span>
+            </a>
           </div>
         </div>
-      </div>
 
-      <!--
-      <div class="container">
-        <br><br><br>
-        <div class="fb-page third" data-href="https://www.facebook.com/saftlade" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/saftlade"><a href="https://www.facebook.com/saftlade">Saftlade</a></blockquote></div></div>
-        <br><br><br>
       </div>
-      -->
 
       <footer class="footer relative">
         <div class="container relative">
@@ -114,14 +137,6 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
       /* eslint-enable */</script>
-    <div id="fb-root"></div>
-    <script>/* eslint-disable */(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));/* eslint-enable */</script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

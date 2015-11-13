@@ -228,8 +228,6 @@ p, .text {
   padding: 2em 0;
   font-size: 0.875em;
   line-height: 1.5;
-  background-color: #1C1C1C;
-  color: white;
 }
 
 .right {
@@ -238,10 +236,6 @@ p, .text {
 
 .left {
   float: left;
-}
-
-.footer a {
-  color: white;
 }
 
 .z10 {
@@ -264,6 +258,15 @@ p, .text {
     #ffffff 60px,
     #ffffff 120px
   );
+}
+
+.dark {
+  background-color: #1C1C1C;
+  color: white;
+}
+
+.dark a {
+  color: white;
 }
 
 .claim {
@@ -485,6 +488,74 @@ p, .text {
 @media screen and (max-width: 700px) {
   #instagram-button {
     display: none;
+  }
+}
+
+#greetings {
+  position: relative;
+  top: 40vh;
+  pointer-events: none;
+}
+
+.gallery-image {
+  position: absolute;
+}
+
+.gallery-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.gallery-image:hover {
+  z-index: 10;
+}
+
+.gallery-image:hover::after {
+  opacity: 0;
+}
+
+#gallery-img1 {
+  top: 4rem;
+  max-width: 65%;
+  left: 20%;
+}
+
+#gallery-img2 {
+  top: 7rem;
+  max-width: 30%;
+  left: 10%;
+}
+
+#gallery-img3 {
+  top: 6rem;
+  max-width: 50%;
+  right: 5%;
+}
+
+@media screen and (max-width: 400px) {
+  #gallery-img1 {
+    top: 2rem;
+    max-width: 80%;
+    left: 20%;
+  }
+
+  #gallery-img2 {
+    top: 9rem;
+    max-width: 50%;
+    left: 0;
+  }
+
+  #gallery-img3 {
+    top: 15rem;
+    max-width: 50%;
+    right: 5%;
   }
 }
 

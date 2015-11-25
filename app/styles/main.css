@@ -193,16 +193,6 @@ p, .text {
   padding-bottom: 6rem;
 }
 
-.fixed-height {
-  height: 45rem;
-}
-
-@media screen and (max-width: 700px) {
-  .fixed-height {
-    height: 35rem;
-  }
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -552,8 +542,17 @@ p, .text {
   pointer-events: none;
 }
 
+.gallery {
+  width: 100%;
+  padding-bottom: 49%;
+}
+
 .gallery-image {
   position: absolute;
+}
+
+.gallery-image.active::after {
+  opacity: 0;
 }
 
 .gallery-image::after {
@@ -595,43 +594,45 @@ p, .text {
 }
 
 @media screen and (max-width: 400px) {
+  .gallery {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    padding-bottom: 49%;
+  }
+
   #gallery-img1 {
-    top: 2rem;
-    max-width: 80%;
-    left: 20%;
+    left: 13%;
+    max-width: 74%;
   }
 
   #gallery-img2 {
-    top: 9rem;
-    max-width: 50%;
     left: 0;
   }
 
   #gallery-img3 {
-    top: 15rem;
-    max-width: 50%;
-    right: 5%;
+    right: 0;
   }
 }
+/*
+}
+*/
 
 #saftkurier-photos-holder {
   position: absolute;
   width: 50%;
-  top: 17rem;
+  top: -5rem;
   right: 1rem;
+  padding-bottom: 43%;
 }
 
 @media screen and (max-width: 700px) {
   #saftkurier-photos-holder {
-    position: static;
-    height: 45rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  #saftkurier-photos-holder {
-    position: static;
-    height: 20rem;
+    position: relative;
+    top: 0;
+    left: 1rem;
+    float: left;
+    width: calc(100% - 2rem);
+    padding-bottom: 75%;
   }
 }
 
@@ -667,15 +668,7 @@ p, .text {
 
 @media screen and (max-width: 700px) {
   #juicebike-button-2 {
-    top: 42rem;
-    left: auto;
-    right: 2rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  #juicebike-button-2 {
-    top: 25rem;
+    top: 90%;
     left: auto;
     right: 2rem;
   }

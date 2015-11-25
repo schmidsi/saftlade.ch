@@ -36,10 +36,9 @@ $(function () {
     var today = new Date((new Date()).setHours(0, 0, 0, 0))
 
     $('[data-hook=instagram-caption]').text(lastPost.caption.text)
-    $('[data-hook=instagram-image-link]').attr('href', lastPost.link)
     $('[data-hook=instagram-image]').attr('src', lastPost.images.standard_resolution.url)
     $('[data-hook=menu-title]').text($('[data-hook=menu-title]').data('alt'))
 
-    console.log(lastPost, created, today, created > today)
+    // console.log(lastPost, created, today, created > today)
   })
 })

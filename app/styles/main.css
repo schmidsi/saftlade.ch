@@ -505,6 +505,10 @@ p, .text {
   }
 }
 
+.footer-button:hover {
+  transform: scale(1.5) rotate(-15deg);
+}
+
 #instagram-image {
   position: relative;
   float: right;
@@ -544,7 +548,6 @@ p, .text {
     margin-bottom: 0rem;
   }
 }
-
 
 #juicebike-button {
   position: absolute;
@@ -637,9 +640,6 @@ p, .text {
     right: 0;
   }
 }
-/*
-}
-*/
 
 #saftkurier-photos-holder {
   position: absolute;

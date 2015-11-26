@@ -91,13 +91,14 @@ ul {
 }
 
 ul li:before {
-  content:"-";
+  content:"・";
   position:relative;
-  left: -5px;
+  top: 1px;
+  left: -3px;
 }
 
 ul li {
-  text-indent: -0.59em;
+  text-indent: -1em;
 }
 
 /* basics
@@ -282,6 +283,10 @@ p, .text {
   float: left;
 }
 
+.z5 {
+  z-index: 5;
+}
+
 .z10 {
   z-index: 10;
 }
@@ -309,6 +314,7 @@ p, .text {
   width: 100%;
   top: 1rem;
   left: 0;
+  z-index: 2;
 }
 
 @media screen and (max-width: 400px) {
@@ -337,7 +343,7 @@ p, .text {
 
 @media screen and (max-width: 400px) {
   .claim {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }
 
@@ -574,8 +580,16 @@ p, .text {
 
 #greetings {
   position: relative;
-  top: 40vh;
+  top: -10rem;
   pointer-events: none;
+}
+
+@media screen and (max-width: 700px) {
+  #greetings {
+    position: static;
+    top: 0;
+    margin-top: 10rem;
+  }
 }
 
 .gallery {
@@ -637,8 +651,8 @@ p, .text {
   }
 
   #gallery-img1 {
-    left: 13%;
-    max-width: 74%;
+    left: 8%;
+    max-width: 84%;
   }
 
   #gallery-img2 {

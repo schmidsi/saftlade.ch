@@ -171,6 +171,23 @@ p, .text {
   overflow: hidden;
 }
 
+.hover-trigger .hover-show {
+  display: none;
+}
+
+.hover-trigger:hover .hover-show {
+  display: block;
+}
+
+.hover-trigger:hover .hover-hide {
+  display: show;
+}
+
+.hover-trigger:hover .hover-hide {
+  display: none;
+}
+
+
 
 /* layout
 ******************************************************************************/
@@ -423,14 +440,14 @@ p, .text {
 
 @media screen and (max-width: 1050px) {
   #instagram-button {
-    top: 17rem;
+    top: 15rem;
     right: 22%;
   }
 }
 
 @media screen and (max-width: 400px) {
  #instagram-button {
-    top: 9rem;
+    top: 6rem;
     right: -1rem;
   }
 }

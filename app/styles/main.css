@@ -187,6 +187,10 @@ p, .text {
   display: none;
 }
 
+.text {
+  font-size: 1rem;
+}
+
 
 
 /* layout
@@ -389,7 +393,7 @@ p, .text {
 
 @media screen and (max-width: 700px) {
   #strawberry-icon {
-    left: -3.75rem;
+    left: -4rem;
   }
 }
 
@@ -521,6 +525,7 @@ p, .text {
 
 @media screen and (max-width: 700px) {
   #instagram-image {
+    position: static;
     float: none;
     width: 100%;
     top: 0;
@@ -549,7 +554,9 @@ p, .text {
 
 @media screen and (max-width: 700px) {
   #juicebike-button {
-    display: none;
+    z-index: 11;
+    bottom: -7rem;
+    left: 4rem;
   }
 }
 

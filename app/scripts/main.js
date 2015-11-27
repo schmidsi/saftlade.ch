@@ -45,7 +45,7 @@ $(function () {
 
   var setRandomImage = function ($el) {
     var random = Math.round((Math.random() * 2))
-    $el.attr('src', '/images/platzhalter-ab15-' + random + '.jpg')
+    $el.attr('src', '/images/platzhalter-ab15-' + (random + 1) + '.jpg')
   }
 
   $.ajax({

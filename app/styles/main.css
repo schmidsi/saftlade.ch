@@ -500,6 +500,7 @@ p, .text {
   background-color: #1C1C1C;
   border-radius: 9em;
   padding: 1em;
+  display: -webkit-box;
   display: flex;
   align-items: center;
   justify-content: center;
